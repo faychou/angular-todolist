@@ -1,0 +1,23 @@
+<div class="panel-footer">
+    <div class="left_count">
+        <span class="label label-default">{{$ctrl.leftCount}} item left</span>
+    </div>
+
+    <div class="btn-group" role="group">
+        <a ng-repeat="filter in $ctrl.filtersLinks track by $index"
+           ng-href="{{filter.link}}"
+           ng-class="filter.active ? 'btn btn-primary' : 'btn btn-default'"
+        >{{filter.value}}</a>
+    </div>
+
+    <div class="clear_completed">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-success" ng-click="$ctrl.checkAll()">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </button>
+            <button type="button" class="btn btn-danger" ng-click="$ctrl.removeCompleted()">
+                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</div>
