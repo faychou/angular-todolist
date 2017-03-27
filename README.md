@@ -1,7 +1,7 @@
 # angular-todolist
 ### Install
-    git clone 
-    cd angular-toDoList
+    git clone https://github.com/faychou/angular-todolist.git
+    cd angular-todolist
     npm install 
 
 ### Run server
